@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% block head %}
   <title>Home</title>
+  <link rel="stylesheet" href="{% static 'home/style.css' %}">
   {% endblock %}
 </head>
 <body>
   {% block content %}
     <div class="container">
-      <h2>Test 2</h2>
+      <div class="s1">
+        <img src="{% static 'home/imgs/hero.png' %}" alt="Hero" class="hero-img">
+
+        <img src="{% static 'home/imgs/title.svg' %}" alt="Title" class="hero-title">
+        <h3 class="hero-sub-title">REDEFINING LUXURY TRAVEL</h3>
+
+        <div class="btn-group">
+          <a href="{% url 'fleet' %}"><button class="btn fleet-btn">Our Fleet</button></a>
+          <a href="tel:07593331949"><button class="btn call-btn">Call Now</button></a>
+        </div>
+      </div>
+
+      <div class="s2">
+        
+      </div>
     </div>
   {% endblock %}
 </body>
