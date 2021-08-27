@@ -1,3 +1,5 @@
+/* SECTION 1 */
+
 .s1 {
   height: 100vh;
 }
@@ -67,6 +69,111 @@
   cursor: pointer;
 }
 
-.s2 {
-  height: 100vh;
+/* SECTION 2 */
+
+.s2-title {
+  width: 211px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 32px;
+
+  color: #3c3c3c;
+}
+
+.card-group {
+  width: 78.125%;
+  margin: 0 auto;
+  margin-top: 70px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-thumbnail {
+  width: 250px;
+  height: 120px;
+  align-self: center;
+  margin-top: 35px;
+}
+
+.card-line {
+  margin-top: 20px;
+  border: 1.5px solid #a5a5a5;
+  background-color: #a5a5a5;
+  width: 250px;
+  align-self: center;
+}
+
+.card-category {
+  font-weight: 600;
+  font-size: 26px;
+
+  letter-spacing: 0.14em;
+
+  color: #000000;
+  margin-top: 11px;
+  margin-left: 25px;
+}
+
+.card-perk1,
+.card-perk2 {
+  font-size: 21px;
+
+  color: #3c3c3c;
+  margin-left: 25px;
+}
+
+.card-perk1 {
+  margin-top: 25px;
+}
+
+.card-perk2 {
+  margin-top: 14px;
+}
+
+.card-car-name {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #828282;
+  margin-left: 25px;
+}
+
+.card-btn,
+.s2-btn {
+  width: 250px;
+  height: 45px;
+
+  border: none;
+  background: #0b5c97;
+  border-radius: 5px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.s2-btn {
+  margin-top: 42px;
+  width: 300px;
 }
