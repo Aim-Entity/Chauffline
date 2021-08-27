@@ -177,3 +177,46 @@
   margin-top: 42px;
   width: 300px;
 }
+
+/* SECTION 3 */
+
+.s3-img {
+  position: absolute;
+  z-index: -1;
+  margin-top: 120px;
+  object-fit: cover;
+}
+
+.s3-content {
+  width: 528px;
+  height: 437px;
+
+  background: #131313;
+
+  position: relative;
+  top: 375px;
+  margin-left: 40px;
+}
+
+.s3-title {
+  width: 234px;
+  margin: 0 auto;
+  padding-top: 27px;
+
+  font-weight: 600;
+  font-size: 36px;
+
+  color: #ffffff;
+}
+
+.s3-par {
+  width: 395px;
+  margin: 0 auto;
+  margin-top: 35px;
+
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+}
