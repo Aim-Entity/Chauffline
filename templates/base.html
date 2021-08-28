@@ -27,7 +27,21 @@
           <a href="#"><li class="contact">Contact</li></a>
         </ul>
       </div>
+
+      <div class="nav-dropdown">
+          <a href="{% url 'index' %}"><li class="home">Home</li></a>
+          <a href="{% url 'fleet' %}"><li class="fleet">Our Fleet</li></a>
+          <a href="#"><li class="contact">Contact</li></a>
+      </div>
+
+      <div class="phone-navigation">
+        <img src="{% static 'base_imgs/logo.svg' %}" alt="Logo" class="logo">
+
+        <img src="{% static 'base_imgs/hamburger.svg' %}" alt="Hamburger" class="hamburger">
+      </div>
     </nav>
+
+
   </div>
 
   {% block content %}
