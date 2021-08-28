@@ -15,6 +15,10 @@
   object-fit: cover;
 }
 
+.s1-title {
+  display: none;
+}
+
 .hero-title {
   margin-top: 30px;
   position: relative;
@@ -185,6 +189,7 @@
 }
 
 .s3-img {
+  width: 100%;
   position: absolute;
   z-index: -1;
   margin-top: 120px;
@@ -492,5 +497,254 @@
 
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-title {
+    display: none;
+  }
+
+  .s1-title {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    font-size: 48px;
+    line-height: 109.68%;
+    /* identical to box height, or 53px */
+
+    text-align: center;
+
+    color: #1f1f1f;
+  }
+
+  .hero-sub-title {
+    font-size: 24px;
+    margin-top: 10px;
+
+    text-align: center;
+
+    color: #ffffff;
+    display: none;
+  }
+
+  .btn-group {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-group a {
+    width: 220px;
+  }
+
+  .fleet-btn {
+    width: 220px;
+    height: 70px;
+    border: none;
+
+    background: #1f1f1f;
+    border-radius: 3px;
+
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .call-btn {
+    width: 220px;
+    height: 70px;
+    background: none;
+
+    border: 2px solid #1f1f1f;
+    border-radius: 3px;
+
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1f1f1f;
+    background: none;
+    cursor: pointer;
+
+    margin-top: 40px;
+  }
+
+  .s1 {
+    height: 60vh;
+  }
+
+  .s3-img {
+    display: none;
+  }
+
+  .s3-content {
+    width: 100%;
+    height: 437px;
+
+    background: #131313;
+
+    position: relative;
+    top: 80px;
+    margin-left: 0px;
+  }
+
+  .s3-par {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 35px;
+
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .s3 {
+    height: 80vh;
+  }
+
+  .services {
+    padding-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
+
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* SECTION 4 */
+
+  .s4-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+
+    margin-top: 66px;
+
+    color: #000000;
+  }
+
+  .age-icon,
+  .saftey-icon,
+  .driver-icon {
+    height: 125px;
+  }
+
+  .adv-div {
+    /* width: 40%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 89px;
+  }
+
+  .age-text {
+    width: 299px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #1b1b1b;
+    margin-top: 45px;
+  }
+
+  .advantages {
+    width: 90.4%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .business-age {
+    border-right: 0px solid #000000;
+    padding-right: 0;
+  }
+
+  .business-driver {
+    border-left: 0px solid #000000;
+    padding-left: 0;
+  }
+
+  /* SECTION 7 */
+
+  .s7-title {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 36px;
+
+    color: #000000;
+  }
+
+  .s7-text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .contact-btn {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1300px) {
+  .s1 {
+    height: 60vh;
+  }
+
+  .hero-title {
+    margin-top: 80px;
+  }
+
+  .hero-img {
+    height: 60vh;
+  }
+
+  .fleet-btn,
+  .call-btn {
+    width: 330px;
+    height: 90px;
+  }
+
+  .s3 {
+    height: 90vh;
+  }
+
+  .s6 {
+    height: 72vh;
+  }
+
+  .s7 {
+    height: 60vh;
   }
 }
