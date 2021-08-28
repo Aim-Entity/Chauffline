@@ -180,6 +180,10 @@
 
 /* SECTION 3 */
 
+.s3 {
+  height: 140vh;
+}
+
 .s3-img {
   position: absolute;
   z-index: -1;
@@ -219,4 +223,216 @@
   text-align: center;
 
   color: #ffffff;
+}
+
+/* S4 */
+
+.mc {
+  width: 320px;
+  height: 320px;
+
+  background: #333333;
+}
+
+.mc-top {
+  display: flex;
+  padding-top: 32px;
+  margin-left: 20px;
+}
+
+.mc-title {
+  width: 140px;
+  margin-left: 25px;
+
+  font-size: 24px;
+
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.mc-text {
+  width: 256px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.services {
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* SECTION 5 */
+
+.s5-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+
+  margin-top: 66px;
+
+  color: #000000;
+}
+
+.age-icon,
+.saftey-icon,
+.driver-icon {
+  height: 125px;
+}
+
+.adv-div {
+  /* width: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 89px;
+}
+
+.age-text {
+  width: 299px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #1b1b1b;
+  margin-top: 45px;
+}
+
+.advantages {
+  width: 90.4%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.business-age {
+  border-right: 2px solid #000000;
+  padding-right: 30px;
+}
+
+.business-driver {
+  border-left: 2px solid #000000;
+  padding-left: 30px;
+}
+
+/* SECTION 6 */
+
+.s6 {
+  width: 100%;
+  height: 110vh;
+  background: #ececec;
+
+  margin-top: 105px;
+}
+
+.card-quote {
+  width: 269px;
+  margin: 0 auto;
+  padding-top: 75px;
+
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #828282;
+}
+
+.card-name {
+  width: 256px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  font-weight: 600;
+  font-size: 26px;
+
+  letter-spacing: 0.14em;
+
+  color: #000000;
+}
+
+.s6-title {
+  width: 208px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.t-card {
+  width: 300px;
+  height: 355px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* SECTION 7 */
+
+.s7 {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.s7-title {
+  font-weight: 600;
+  font-size: 48px;
+
+  color: #000000;
+  margin-left: 40px;
+}
+
+.s7-text {
+  width: 680px;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+  margin-top: 35px;
+
+  margin-left: 40px;
+}
+
+.contact-btn {
+  width: 220px;
+  height: 70px;
+
+  background: #0b5c97;
+  border-radius: 3px;
+  border: none;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+  margin-top: 35px;
+
+  margin-left: 40px;
 }
