@@ -110,6 +110,7 @@
   height: 120px;
   align-self: center;
   margin-top: 35px;
+  object-fit: cover;
 }
 
 .card-line {
@@ -365,6 +366,7 @@
   font-size: 26px;
 
   letter-spacing: 0.14em;
+  text-align: center;
 
   color: #000000;
 }

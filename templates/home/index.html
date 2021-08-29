@@ -32,58 +32,24 @@
 
         <div class="card-group">
           <!-- CARD 1 -->
+          {% for car in cars %}
           <div class="card">
-            <img src="{% static 'home/imgs/thumbnail_placeholder.png' %}" alt="Thumbnail" class="card-thumbnail">
+            <img src="{{ car.car.image.url }}" alt="Thumbnail" class="card-thumbnail">
 
             <hr class="card-line">
 
-            <h2 class="card-category">First Class</h2>
+            <h2 class="card-category">{{ car.car.category }}</h2>
 
-            <p class="card-perk1">Passengers:  4</p>
-            <p class="card-perk2">Luggages: 2</p>
+            <p class="card-perk1">{{ car.car.quality_one }}</p>
+            <p class="card-perk2">{{ car.car.quality_two }}</p>
 
-            <p class="card-car-name">BMW 7 Series</p>
+            <p class="card-car-name">{{ car.car.name }}</p>
 
             <hr class="card-line">
 
             <a href="#"><button class="card-btn btn">Find Out More</button></a>
           </div>
-
-          <!-- CARD 2 -->
-          <div class="card">
-            <img src="{% static 'home/imgs/thumbnail_placeholder.png' %}" alt="Thumbnail" class="card-thumbnail">
-
-            <hr class="card-line">
-
-            <h2 class="card-category">First Class</h2>
-
-            <p class="card-perk1">Passengers:  4</p>
-            <p class="card-perk2">Luggages: 2</p>
-
-            <p class="card-car-name">BMW 7 Series</p>
-
-            <hr class="card-line">
-
-            <a href="#"><button class="card-btn btn">Find Out More</button></a>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="card">
-            <img src="{% static 'home/imgs/thumbnail_placeholder.png' %}" alt="Thumbnail" class="card-thumbnail">
-
-            <hr class="card-line">
-
-            <h2 class="card-category">First Class</h2>
-
-            <p class="card-perk1">Passengers:  4</p>
-            <p class="card-perk2">Luggages: 2</p>
-
-            <p class="card-car-name">BMW 7 Series</p>
-
-            <hr class="card-line">
-
-            <a href="#"><button class="card-btn btn">Find Out More</button></a>
-          </div>
+          {% endfor %}
         </div>
         <a href="#"><button class="s2-btn btn">Find More Cars</button></a>
       </div>
@@ -189,32 +155,15 @@
         <h2 class="s6-title">Testimonials</h2>
 
         <div class="card-group">
+          {% for testimonial in testimonials %}
           <div class="t-card">
-            <p class="card-quote">“netus et malesuada 
-              fames ac turpis egestas integer”</p>
+            <p class="card-quote">“{{ testimonial.message }}”</p>
 
             <h3 class="card-name">
-              - Sarah Viklund
+              - {{ testimonial.name }}
             </h3>
           </div>
-
-          <div class="t-card">
-            <p class="card-quote">“netus et malesuada 
-              fames ac turpis egestas integer”</p>
-
-            <h3 class="card-name">
-              - Sarah Viklund
-            </h3>
-          </div>
-
-          <div class="t-card">
-            <p class="card-quote">“netus et malesuada 
-              fames ac turpis egestas integer”</p>
-
-            <h3 class="card-name">
-              - Sarah Viklund
-            </h3>
-          </div>
+          {% endfor %}
         </div>
         <a href="#"><button class="s2-btn btn">Visit Our Fleet</button></a>
       </div>
