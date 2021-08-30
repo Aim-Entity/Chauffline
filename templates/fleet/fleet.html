@@ -18,11 +18,14 @@
       <h2 class="s1-title">Here Are Some Of Our Cars</h2>
       <p class="s1-sub-title">* Send Us A Call To Request A Car</p>
 
-      <div class="search-bar">
-        <input type="text" class="search" placeholder="Search A Car...">
+      <form method="GET">
+        <div class="search-bar">
+          <!-- <input type="text" class="search" placeholder="Search A Car..."> -->
+          {{ filter.form }}
 
-        <img src="{% static 'fleet/imgs/search.svg' %}" alt="Mag" class="mag">
-      </div>
+          <button type="submit" class="search-btn"><img src="{% static 'fleet/imgs/search.svg' %}" alt="Mag" class="mag"></button>
+        </div>
+      </form>
 
       <div class="categories">
         <a href="#"><div class="all active-btn category-btn"><p class="category-test">All</p></div></a>
@@ -35,7 +38,7 @@
 
     <div class="s2">
       <div class="card-group">
-        {% for car in car_list %}
+        {% for car in filter.qs %}
         <div class="card">
           <img src="{{ car.image.url }}" alt="Thumbnail" class="card-thumbnail">
   
@@ -63,6 +66,10 @@
       opacity: 1;
     }
   </style>
+
+  <script>
+    document.querySelector("#id_name__icontains").placeholder = "Search A Car.."
+  </script>
   {% endblock %}
 </body>
 </html>
