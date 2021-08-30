@@ -44,7 +44,6 @@ function phoneNav() {
   hamburger.addEventListener("click", (e) => {
     // dropdown.classList.toggle("nav-dropdown")
     dropdown.classList.toggle("nav-dropdown-active")
-    console.log(dropdown)
   })
 }
 

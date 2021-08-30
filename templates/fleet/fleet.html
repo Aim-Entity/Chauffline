@@ -1,14 +1,68 @@
 {% extends 'base.html' %}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block head %}
   <title>Our Fleet</title>
+  <link rel="stylesheet" href="{% static 'fleet/fleet.css' %}">
+  {% endblock %}
 </head>
 <body>
+  {% block content %}
+  <div class="container">
+    <div class="s1">
+      <h2 class="s1-title">Here Are Some Of Our Cars</h2>
+      <p class="s1-sub-title">* Send Us A Call To Request A Car</p>
+
+      <div class="search-bar">
+        <input type="text" class="search" placeholder="Search A Car...">
+
+        <img src="{% static 'fleet/imgs/search.svg' %}" alt="Mag" class="mag">
+      </div>
+
+      <div class="categories">
+        <a href="#"><div class="all active-btn category-btn"><p class="category-test">All</p></div></a>
+        <a href="#"><div class="first_class category-btn"><p class="category-test">First Class</p></div></a>
+        <a href="#"><div class="executive category-btn"><p class="category-test">Executive</p></div></a>
+        <a href="#"><div class="business category-btn"><p class="category-test">Business</p></div></a>
+        <a href="#"><div class="XL category-btn"><p class="category-test">XL</p></div></a>
+      </div>
+    </div>
+
+    <div class="s2">
+      <div class="card-group">
+        {% for car in car_list %}
+        <div class="card">
+          <img src="{{ car.image.url }}" alt="Thumbnail" class="card-thumbnail">
   
+          <hr class="card-line">
+  
+          <h2 class="card-category">{{ car.category }}</h2>
+  
+          <p class="card-perk1">{{ car.quality_one }}</p>
+          <p class="card-perk2">{{ car.quality_two }}</p>
+  
+          <p class="card-car-name">{{ car.name }}</p>
+  
+          <hr class="card-line">
+  
+          <a href="{% url 'fleet-detail' car.slug %}"><button class="card-btn btn">Find Out More</button></a>
+        </div>
+        {% endfor %}
+      </div>
+      
+    </div>
+  </div>
+
+  <style>
+    .navigation{
+      opacity: 1;
+    }
+  </style>
+  {% endblock %}
 </body>
 </html>
