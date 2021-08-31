@@ -115,6 +115,7 @@ form button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -206,4 +207,51 @@ form button {
   transform: translateX(-50%);
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1015px) {
+  .card-group {
+    width: 78.125%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    margin-top: -30px;
+  }
+
+  .card-group {
+    width: 88.125%;
+    margin: 0 auto;
+    margin-top: 90px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categories {
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+    margin-top: 40px;
+  }
+
+  .category-btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 20px;
+  }
 }

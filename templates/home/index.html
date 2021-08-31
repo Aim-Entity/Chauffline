@@ -47,11 +47,11 @@
 
             <hr class="card-line">
 
-            <a href="#"><button class="card-btn btn">Find Out More</button></a>
+            <a href="{% url 'fleet-detail' car.car.slug %}"><button class="card-btn btn">Find Out More</button></a>
           </div>
           {% endfor %}
         </div>
-        <a href="#"><button class="s2-btn btn">Find More Cars</button></a>
+        <a href="{% url 'fleet' %}"><button class="s2-btn btn">Find More Cars</button></a>
       </div>
 
       <div class="s3">
@@ -165,7 +165,7 @@
           </div>
           {% endfor %}
         </div>
-        <a href="#"><button class="s2-btn btn">Visit Our Fleet</button></a>
+        <a href="{% url 'fleet' %}"><button class="s2-btn btn">Visit Our Fleet</button></a>
       </div>
 
       <div class="s7">
