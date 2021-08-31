@@ -9,7 +9,9 @@ CATEGORY_CHOICES = (
 
 
 class Car(models.Model):
-    image = models.ImageField(upload_to="car_thumbnails")
+    thumbnail = models.ImageField(upload_to="car_thumbnails")
+
+    cover = models.ImageField(upload_to="car_covers")
     name = models.CharField(max_length=40)
     category = models.CharField(max_length=40, choices=CATEGORY_CHOICES)
 
@@ -20,8 +22,8 @@ class Car(models.Model):
 
     decription = models.TextField()
 
-    hourly_rate = models.IntegerField(default=50, blank=True, null=True)
-    daily_rate = models.IntegerField(default=350, blank=True, null=True)
+    hourly_rate = models.IntegerField(default=50)
+    daily_rate = models.IntegerField(default=350)
 
     slug = models.SlugField(
         default="please-input-in-this-format", max_length=100)

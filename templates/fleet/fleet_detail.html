@@ -6,9 +6,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  {% block head %}
+  <title>{{ object.name }}</title>
+  <link rel="stylesheet" href="{% static 'fleet/fleet_detail.css' %}">
+  {% endblock %}
 </head>
 <body>
-  
+  {% block content %}
+    <div class="container">
+      <div class="s1">
+        <img src="{{ object.cover.url }}" alt="Product" class="product-img">
+
+        <div class="product-info">
+          <h3 class="product-name">{{ object.name }}</h3>
+
+          <div class="rate-cont rate-cont1">
+            <div class="top-rate">
+              <img src="{% static 'fleet/imgs/clock.svg' %}" alt="Time" class="rate-img">
+              <p class="rate-title">Per Hour Rate</p>
+            </div>
+
+            <p class="rate"><b class="rate-price">£{{ object.hourly_rate }}</b><b class="rate-time"> / Hour.</b> Min of 2 hours hire
+            </p>
+          </div>
+
+          <div class="rate-cont rate-cont2">
+            <div class="top-rate">
+              <img src="{% static 'fleet/imgs/calender.svg' %}" alt="Time" class="rate-img">
+              <p class="rate-title">Per Day Rate</p>
+            </div>
+
+            <p class="rate"><b class="rate-price">£{{ object.daily_rate }}</b><b class="rate-time"> / Day.</b> 10 hour day
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="s2">
+        <h2 class="desc-title">Car Description</h2>
+
+        <p class="desc-text">{{ object.decription }}</p>
+
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </div>
+  {% endblock %}
 </body>
 </html>

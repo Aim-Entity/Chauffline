@@ -142,7 +142,7 @@ form button {
   height: 120px;
   align-self: center;
   margin-top: 35px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-line {
