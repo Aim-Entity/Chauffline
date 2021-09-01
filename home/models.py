@@ -18,3 +18,6 @@ class Testimonials(models.Model):
 class PopularCar(models.Model):
     car = models.ForeignKey(Car, on_delete=models.CASCADE,
                             related_name="popular_car")
+
+    def __str__(self):
+        return self.car.name

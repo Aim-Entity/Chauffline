@@ -148,3 +148,61 @@ form input {
 footer {
   margin-top: 210px;
 }
+
+@media screen and (max-width: 960px) {
+  .s1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* justify-items: center; */
+  }
+
+  .s1-right {
+    grid-column: 2 / span 1;
+    justify-self: right;
+    margin-right: 0px;
+
+    width: 356px;
+    height: 695px;
+  }
+
+  .s1-left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-left: 0px;
+  }
+
+  .s1-left p,
+  .s1-left h2 {
+    text-align: center;
+  }
+
+  .contact-detail {
+    margin: 0 auto;
+  }
+
+  .s1-left-top {
+    margin-top: 70px;
+  }
+
+  .s1-text {
+    width: 346px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .s1-text2 {
+    width: 346px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .contact-img {
+    width: 55px;
+  }
+
+  .contact-text {
+    font-size: 21px;
+  }
+}

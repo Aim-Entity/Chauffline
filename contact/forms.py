@@ -7,7 +7,7 @@ class ContactForm(forms.ModelForm):
     name = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'name forms'}), label='Name')
 
-    phone_number = forms.CharField(widget=forms.TextInput(
+    phone = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'phoneNumber forms'}), label='Phone Number')
 
     email = forms.CharField(widget=forms.EmailInput
@@ -18,4 +18,4 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = Contact
-        fields = ("name", "phone_number", "email", "message")
+        fields = ("name", "phone", "email", "message")
