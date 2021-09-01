@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "home",
     "fleet",
-    "django_filters"
+    "django_filters",
+    "contact",
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [

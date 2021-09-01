@@ -25,7 +25,7 @@
         <ul>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
           <a href="{% url 'fleet' %}"><li class="fleet">Our Fleet</li></a>
-          <a href="#"><li class="contact">Contact</li></a>
+          <a href="{% url 'contact' %}"><li class="contact">Contact</li></a>
         </ul>
       </div>
 
@@ -33,7 +33,7 @@
         <div>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
           <a href="{% url 'fleet' %}"><li class="fleet">Our Fleet</li></a>
-          <a href="#"><li class="contact">Contact</li></a>
+          <a href="{% url 'contact' %}"><li class="contact">Contact</li></a>
         </div>
       </div>
 
@@ -50,6 +50,8 @@
   {% block content %}
     ADD A CONTENT BLOCK
   {% endblock %}
+
+  <script src="{% static 'home/base.js' %}"></script>
 
   <div class="base-container">
     <footer>
@@ -74,9 +76,5 @@
       </div>
     </footer>
   </div>
-
-  <script src="{% static 'home/base.js' %}">
-
-  </script>
 </body>
 </html>

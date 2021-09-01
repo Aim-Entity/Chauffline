@@ -175,11 +175,15 @@
           If you have an enquiry send us an email or use
           our online contact form.</p>
 
-        <button class="contact-btn btn">Contact Us</button>
+        <a href="{% url 'contact' %}"><button class="contact-btn btn">Contact Us</button></a>
       </div>
     </div>
 
     <style>
+      .contact-btn{
+        cursor: pointer;
+      }
+
       /* BASE MODIFIED */
       /* .navigation {
         width: 100%;
