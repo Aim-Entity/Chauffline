@@ -1,0 +1,5 @@
+django = "==2.2.7"
+python-decouple = "*"
+pillow = "*"
+django-filter = "*"
+django-phonenumber-field = {extras = ["phonenumbers"],version = "*"}
